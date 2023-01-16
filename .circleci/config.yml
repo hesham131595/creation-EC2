@@ -23,7 +23,7 @@ jobs:
       steps:
         - checkout
         - add_ssh_keys:
-            fingerprint: ["94:62:e8:7a:8f:27:79:e3:cd:78:a0:31:a2:95:57:56"] 
+            fingerprint: ["54:e5:4c:65:d7:6c:a4:42:bf:b1:e2:08:4f:e8:f9:70"] 
         - run:
             name: install ansible
             command: |
