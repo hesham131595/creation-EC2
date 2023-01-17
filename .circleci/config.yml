@@ -15,7 +15,7 @@ jobs:
             command: |
               aws cloudformation deploy \
                 --template-file template.yml \
-                --stack-name infra \
+                --stack-name infra2 \
                 --region us-east-1
   config_infrastructure: 
       docker:
