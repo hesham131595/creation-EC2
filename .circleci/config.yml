@@ -32,7 +32,7 @@ jobs:
         - run:
             name: configure
             command: |
-              ansible-playbook -i inventory.txt playbook.yml --private-key test-pip.pem
+              ansible-playbook -i inventory.txt playbook.yml 
 workflows:
   my_workflow:
       jobs:
