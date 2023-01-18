@@ -35,7 +35,7 @@ jobs:
         - run:
             name: configure
             command: |
-              ansible-playbook -i inventory.txt -vvv playbook.yml 
+              ansible-playbook -i inventory -vvv playbook.yml 
 workflows:
   my_workflow:
       jobs:
