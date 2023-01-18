@@ -35,7 +35,7 @@ jobs:
         - run:
             name: configure
             command: |
-              cat /etc/ansible/ansible.cfg
+              # cat /etc/ansible/ansible.cfg
               export ANSIBLE_HOST_KEY_CHECKING=False
               ansible-playbook -i inventory -vvv playbook.yml 
 workflows:
