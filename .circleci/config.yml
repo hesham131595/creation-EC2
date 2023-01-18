@@ -38,7 +38,8 @@ jobs:
               # cat /etc/ansible/ansible.cfg
               export ANSIBLE_HOST_KEY_CHECKING=False
               ansible all --list-hosts
-              ansible-playbook -i inventory -vvv playbook.yml 
+              # ansible-playbook -i inventory -vvv playbook.yml 
+              ansible ubuntu -m ping -i inventory 
 workflows:
   my_workflow:
       jobs:
