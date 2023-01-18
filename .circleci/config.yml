@@ -35,5 +35,5 @@ jobs:
 workflows:
   my_workflow:
       jobs:
-        - create_infrastructure     
-        # - config_infrastructure           
+        # - create_infrastructure     
+        - config_infrastructure           
