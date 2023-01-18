@@ -5,18 +5,18 @@ version: 2.1
 #   # welcome: circleci/welcome-orb@0.4.1
 #   aws-cli: circleci/aws-cli@2.0.3
 jobs:
-  # create_infrastructure: 
-  #     docker:
-  #       - image: amazon/aws-cli
-  #     steps:
-  #       - checkout
-  #       - run:
-  #           name: Create Cloudformation Stack
-  #           command: |
-  #             aws cloudformation deploy \
-  #               --template-file template.yml \
-  #               --stack-name infra2 \
-  #               --region us-east-1
+  create_infrastructure: 
+      docker:
+        - image: amazon/aws-cli
+      steps:
+        - checkout
+        - run:
+            name: Create Cloudformation Stack
+            command: |
+              aws cloudformation deploy \
+                --template-file template.yml \
+                --stack-name infra2 \
+                --region us-east-1
   config_infrastructure: 
       docker:
         - image: python:3.7-alpine3.11
@@ -35,5 +35,5 @@ jobs:
 workflows:
   my_workflow:
       jobs:
-        # - create_infrastructure     
-        - config_infrastructure           
+        - create_infrastructure     
+        # - config_infrastructure           
