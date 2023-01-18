@@ -31,7 +31,7 @@ jobs:
         - run:
             name: install ansible
             command: |
-              apk add --update ansible
+              apk add --update ansible=2.9.6
         - run:
             name: configure
             command: |
