@@ -23,7 +23,7 @@ jobs:
       steps:
         - checkout
         - add_ssh_keys:
-            fingerprint: ["02:94:3e:a0:af:a1:7b:6d:0a:17:b1:65:90:c2:9e:90"] 
+            fingerprints: ["02:94:3e:a0:af:a1:7b:6d:0a:17:b1:65:90:c2:9e:90"] 
         # - run: ssh-keyscan -H ec2-54-161-221-196.compute-1.amazonaws.com >> ~/.ssh/known_hosts
         - run:
             name: install ansible
